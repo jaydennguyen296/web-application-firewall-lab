@@ -15,6 +15,7 @@ The lab consists of three main components:
 
 - **Ubuntu Server Hosting DVWA**
   - Hosts DVWA, MySQL, Apache, and PHP.
+  - DVWA runs on port `8080`.
   - This machine serves as the vulnerable target application, receiving only filtered traffic through the WAF.
 
 - A custom DNS entry was configured so the application is accessed using the domain name `myweb.testing`, simulating a real website.
@@ -65,6 +66,7 @@ Apache and PHP were installed on Ubuntu to serve the DVWA web application. This 
 
 - DVWA was downloaded into the Apache web directory.
 - The DVWA configuration file was updated to match the database details created earlier.
+- Apache was configured to serve DVWA on port `8080`.
 - Apache was then restarted so DVWA could run properly.
 
 ### 4. Installing Docker
@@ -87,7 +89,7 @@ Apache and PHP were installed on Ubuntu to serve the DVWA web application. This 
 ### 7. Adding the Protected Site in Safeline WAF
 
 - The domain `myweb.testing` was added as a protected website in Safeline.
-- The WAF was configured to forward allowed traffic to the DVWA server on port `80`.
+- The WAF was configured to forward allowed traffic to the DVWA server on port `8080`.
 - From this point forward, all traffic to the domain passed through Safeline.
 
 ### 8. Testing the WAF Using Kali Linux

@@ -107,6 +107,8 @@ Using Kali, multiple categories of attacks were attempted against DVWA through t
 
 All blocked requests were logged in the Safeline dashboard, confirming that the WAF was effectively protecting the DVWA server.
 
+Screenshots can be found in the `Screenshots` folder.
+
 ## What This Project Demonstrates
 
 - How to deploy a WAF using Docker

@@ -1,6 +1,6 @@
-# Web Application Firewall Lab
+#Project Summary
 
-A virtual Web Application Firewall (WAF) lab using Ubuntu, Kali Linux, and a Safeline WAF appliance.
+This project demonstrates deploying a Safeline Web Application Firewall (WAF) in front of a DVWA web application hosted on an Ubuntu server. It includes WAF rule testing using Kali Linux and manual DNS configuration to simulate a real-world environment. The project showcases practical skills in web security, virtualized networking, Linux server administration, and WAF operations.
 
 ## Overview
 
